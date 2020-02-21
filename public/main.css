@@ -1,0 +1,46 @@
+html {
+    font-family: SansSerif;
+}
+
+.message-list {
+    padding: 0;
+}
+
+.message-list-item {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.message-list-item__author {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: .5rem;
+}
+
+.message-list-item__text {
+
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+.form-row label {
+    width: 20%;
+}
+
+.form-row input, .form-row textarea {
+    width: 80%;
+}
+
+.form-controls {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+

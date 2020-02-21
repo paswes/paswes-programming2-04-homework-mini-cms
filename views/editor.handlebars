@@ -1,0 +1,23 @@
+<h1>Form2Input</h1>
+
+<form id="article-form" action="/new" method="post">
+    <div class="form-row">
+        <label for="headline-input">Headline</label>
+        <input type="text" name="article-headline" id="headline-input" required minlength="1" maxlength="30">
+    </div>
+    <div class="form-row">
+        <label for="text-input">Text</label>
+        <textarea name="article-text" id="text-input" rows="4" required minlength="1" maxlength="300"></textarea>
+    </div>
+    <div class="form-row">
+        <label for="image-input">Image</label>
+        <input type="image" id="image-input" src="ADD HERE">
+    </div>
+    <div class="form-row">
+        <label for="author-input">Image</label>
+        <input type="text" name="article-author" id="author-input" required minlength="1" maxlength="15">
+    </div>
+    <div class="form-controls">
+        <button type="submit">Publish</button>
+    </div>
+</form>

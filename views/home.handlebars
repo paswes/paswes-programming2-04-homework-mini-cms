@@ -1,0 +1,25 @@
+<h1>Coole Newspage</h1>
+
+<main>
+    <section>
+        {{#articles}}
+        <article class="article-items">
+             <div class="article-items__headline">
+                <h2>{{headline}}</h2>
+             </div>
+             <div class="article-items__teaser-image">
+                <img src="{{url}}">
+             </div>
+             <div class="article-items__teaser-text">
+                <p>{{text}}</p>
+             </div>
+             <div class="article-items__author">
+                <p>{{author}}</p>
+             </div>
+             <div class="article-items__date">
+                <p>{{date}}</p>
+             </div>
+        </article>
+        {{/articles}}
+    </section>
+</main>
