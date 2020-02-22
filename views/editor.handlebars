@@ -1,21 +1,25 @@
-<h1>Form2Input</h1>
+<h1>New Article</h1>
 
 <form id="article-form" action="/new" method="post">
     <div class="form-row">
         <label for="headline-input">Headline</label>
-        <input type="text" name="article-headline" id="headline-input" required minlength="1" maxlength="30">
+        <input type="text" name="headline" id="headline-input" required minlength="1" maxlength="100">
     </div>
     <div class="form-row">
-        <label for="text-input">Text</label>
-        <textarea name="article-text" id="text-input" rows="4" required minlength="1" maxlength="300"></textarea>
+        <label for="teaser-input">Teaser Text</label>
+        <textarea name="teaser" id="teaser-input" rows="3" required minlength="1" maxlength="400"></textarea>
     </div>
     <div class="form-row">
-        <label for="image-input">Image</label>
-        <input type="image" id="image-input" src="ADD HERE">
+        <label for="image-input">Image (You can change the Url)</label>
+        <input type="text" value="http://via.placeholder.com/640x360" name="image" id="author-input" required minlength="1" maxlength="150">
     </div>
     <div class="form-row">
-        <label for="author-input">Image</label>
-        <input type="text" name="article-author" id="author-input" required minlength="1" maxlength="15">
+        <label for="text-input">Article Text</label>
+        <textarea name="article" id="text-input" rows="20" required minlength="1" maxlength="20000"></textarea>
+    </div>
+    <div class="form-row">
+        <label for="author-input">Author</label>
+        <input type="text" name="author" id="author-input" required minlength="1" maxlength="20">
     </div>
     <div class="form-controls">
         <button type="submit">Publish</button>

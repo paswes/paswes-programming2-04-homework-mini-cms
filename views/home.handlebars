@@ -1,23 +1,23 @@
-<h1>Coole Newspage</h1>
+<header>
+    <h1>Coole Newspage</h1>
+</header>
 
 <main>
     <section>
         {{#articles}}
-        <article class="article-items">
-             <div class="article-items__headline">
-                <h2>{{headline}}</h2>
+        <article class="home-article">
+             <div class="article-home__teaser-image">
+                 <a href="{{linkUrl}}"><img src="{{imageUrl}}"></a>
              </div>
-             <div class="article-items__teaser-image">
-                <img src="{{url}}">
+             <div class="article-home__headline">
+                 <a href="{{linkUrl}}"><h2>{{headline}}</h2></a>
              </div>
-             <div class="article-items__teaser-text">
-                <p>{{text}}</p>
+             <div class="container">
+                <p class="article-home__author">{{author}}</p>
+                <p class="article-home__date">{{date}}</p>
              </div>
-             <div class="article-items__author">
-                <p>{{author}}</p>
-             </div>
-             <div class="article-items__date">
-                <p>{{date}}</p>
+             <div class="article-home__teaser-text">
+               <a href="{{linkUrl}}"><p>{{teaser}}</p></a>
              </div>
         </article>
         {{/articles}}

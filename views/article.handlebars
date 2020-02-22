@@ -1,0 +1,28 @@
+<header>
+    <h1>Coole Newspage</h1>
+</header>
+
+<main>
+    <section>
+        {{#article}}
+        <article class"selected-article">
+             <div class="article-selected__headline">
+                <h2>{{headline}}</h2>
+             </div>
+             <div class="container">
+                <p class="article-selected__author">{{author}}</p>
+                <p class="article-selected__date">{{date}}</p>
+             </div>
+             <div class="article-selected__teaser-image">
+                <img src="{{imageUrl}}">
+             </div>
+             <div class="article-selected__teaser-text">
+                <p>{{teaser}}</p>
+             </div>
+             <div class="article-selected__article-text">
+                <p>{{article}}</p>
+             </div>
+        </article>
+        {{/article}}
+    </section>
+</main>
